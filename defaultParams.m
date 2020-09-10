@@ -1,4 +1,4 @@
-folder='figuresTest'; % Where to save figures etc.
+folder='figures'; % Where to save figures etc.
 nameSuffix=''; % Text to append at the end of filename when saving. Useful for distinguishing saved simulations results with different parameters.
 
 largeDt=0.2; % Simulation step; Simple Euler method is used. The step becomes finer when changes in values are large.
