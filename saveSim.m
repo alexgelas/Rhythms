@@ -1,0 +1,2 @@
+filepath=strcat(folder,'/',nameSuffix,'.mat');
+save(filepath,'fullV','fullMAR','fullMKM','fullSynapses','fullInputV','fullSInput','RS','FS','LTS','IBapical','IBbasal','IBsoma','IBaxon','preSyn','postSyn','synapseType','gSyn','preGap','postGap','gGap','largeDt','saveStep','steps','realIB','realRS','gFStoSI','gSItoSI','gGammaToSI','gammaInput','gammaFreq','gammaJitter','randType','beta1Freq','betaJitter','nameSuffix','displayInputVgamma','displayInputVbeta')
