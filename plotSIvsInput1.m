@@ -4,7 +4,7 @@ load(filepath)
 h=figure(1);
 clf;
 hold on
-plot(input1freqs,SIfreqs1,'LineWidth',2);
+plot(input1freqs,SIfreqs1,'LineWidth',2,'Color','black');
 plot([input1freqs(1) input1freqs(end)],[input1freqs(1) input1freqs(end)],'LineStyle','--','LineWidth',1.5,'Color','black');
 hold off
 
@@ -24,4 +24,5 @@ h.PaperPosition = [0 0 6 6];
 filepath=strcat(folder,'/',nameSuffix);
 saveas(h,filepath,'fig');
 %saveas(h,filepath,'png');
-saveas(h,filepath,'pdf');
+set(h,'PaperSize',[h.PaperPosition(3), h.PaperPosition(4)]);
+print(h,filepath,'-dpdf','-r0')
